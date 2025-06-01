@@ -125,7 +125,7 @@ img {
  /* Laptop CSS */
 
 .laptop {
-  width: 90%;
+   width: 90%;
   max-width: 600px;
   height: 360px;
   background: #222;
@@ -186,6 +186,13 @@ blockquote footer {
 .slide-right {
   animation: slideFromRight 1.5s ease-out forwards;
 }
+
+@media (max-width: 768px) {
+  .laptop {
+    margin-top: 80px;
+  }
+}
+
  /* Laptop CSS End */
 
 /* About me CSS */
