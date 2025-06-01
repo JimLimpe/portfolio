@@ -9,7 +9,7 @@ const Home = () => {
   </h1>
 
   <p className="slide-up fs-4 mb-5">
-    My name is <strong>Lymperis Dimitris</strong> and my passion is all about creating responsive and engaging Webpages.
+    My name is <strong>Lymperis Dimitris</strong> and my passion is all about creating responsive Frontend
   </p>
 
   <div className="laptop slide-right">
