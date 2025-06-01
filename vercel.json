@@ -1,5 +1,18 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "lymperisdimitrisdev.com"
+        }
+      ],
+      "destination": "https://www.lymperisdimitrisdev.com/$1",
+      "permanent": true
+    }
   ]
 }
