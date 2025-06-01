@@ -13,7 +13,7 @@ My very first time working with my own domain.
 -Footer with social media links at the bottom of the page, instead of Contact form
 
 ## Live Demo
-👉 [lymperisdimitrisdev.com](https://lymperisdimitrisdev.com)
+👉 https://www.lymperisdimitrisdev.com/
 
 ## Features
 - Single Page Application with smooth routing
