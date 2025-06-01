@@ -11,6 +11,7 @@ const Home = () => {
   <p className="slide-up fs-4 mb-5">
     My name is <strong>Lymperis Dimitris</strong> and my passion is all about creating responsive Frontend
   </p>
+  <br></br>
 
   <div className="laptop slide-right">
   <div className="screen">
