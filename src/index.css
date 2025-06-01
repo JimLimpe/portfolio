@@ -1,0 +1,261 @@
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background-color:#ffffff;
+  color: #213547;
+   padding-bottom: 150px;
+}
+
+.header {
+ margin-top: 20px;
+}
+
+/* footer CSS */
+.footer_container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  z-index: 1000;
+  margin: auto;
+  background-color: #eaeff0;
+
+}
+
+@media screen and (max-width: 600px) {
+  .footer_container {
+    gap: 10px;
+    padding: 10px;
+  }
+
+ 
+}
+
+/* footer CSS end */
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  
+}
+
+
+/*Projects Css */
+.project-intro {
+   padding:20px;
+   
+}
+
+.list-group {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 10px;
+}
+
+.list-group-item {
+  text-decoration: none;
+  color: #213547;
+  padding: 5px 10px;
+}
+
+.list-group-item.active {
+  font-weight: bold;
+  border-bottom: 2px solid #213547;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  max-width: 100%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;        
+}
+
+.project-card {
+  background-color: #eaeff0;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;      
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+/*Projects Css end*/
+
+.dropdown {
+  width: 20%;
+  margin: 20px;
+  list-style-type: none;
+}
+
+.dropdown-menu {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+ /* Laptop CSS */
+
+.laptop {
+  width: 90%;
+  max-width: 600px;
+  height: 360px;
+  background: #222;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  bottom: 130px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  
+}
+
+.screen {
+  background-color: #088ca2;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  
+}
+
+.code-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+blockquote footer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #e0f7fa;
+}
+
+/* Slide-in animation */
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  animation: slideFromRight 1.5s ease-out forwards;
+}
+ /* Laptop CSS End */
+
+/* About me CSS */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  position: absolute; 
+  z-index: 10;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+
+.carousel-inner {
+  min-height: 500px;
+  position: relative;
+}
+
+.carousel-item {
+  height: 100%;
+  overflow-y: auto; 
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-inner {
+    min-height: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  .table-responsive {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    padding-left: 10px;  
+  }
+}
+
+/* About me CSS end*/
+
